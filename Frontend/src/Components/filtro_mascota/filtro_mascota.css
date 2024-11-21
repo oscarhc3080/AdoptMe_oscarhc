@@ -1,0 +1,190 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  margin-top: 100px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-left: 40px;
+}
+
+.right {
+  display: flex;
+  /* Asegúrate de que sea un contenedor flexible */
+  flex-direction: row;
+  margin-left: 30px;
+  width: 60%;
+  justify-content: space-around;
+}
+
+.btnAdoptar {
+  display: flex;
+  justify-content: center;
+}
+
+.atributos,
+.respuestas_atributos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Centra el contenido */
+}
+
+
+
+.left h1 {
+
+  margin-top: 0;
+  font-size: 60px;
+}
+
+.btn-adoptar {
+  margin-top: 40px;
+  width: 100%;
+  font-size: 44px;
+  font-family: "Lilita One", sans-serif;
+  ;
+}
+
+/* Estilo del carrusel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  height: auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo semi-transparente */
+  color: #fff;
+  /* Color del texto del botón */
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-button:first-child {
+  left: -50px;
+  /* Ajusta la posición del botón izquierdo */
+}
+
+.carousel-button:last-child {
+  right: -50px;
+  /* Ajusta la posición del botón derecho */
+}
+
+
+.atributos h3,
+.respuestas_atributos h3 {
+  width: 330px;
+  height: auto;
+  border: 1px solid;
+  margin: 5px 0;
+  font-size: 24px;
+  border-radius: 16px;
+  text-align: center;
+  padding: 4px;
+}
+
+.atributos {
+  display: flex;
+  flex-direction: column;
+}
+
+.atributos h3 {
+  background-color: #1e9dba;
+}
+
+.respuestas_atributos h3 {
+  background-color: #FFBE61;
+}
+
+.respuestas_atributos {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sección */
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  width: 500px;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.left_section {
+  flex: 1;
+}
+
+.right_section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.right_section img {
+  max-width: 40%;
+  height: auto;
+  margin-left: 150px;
+}
+
+.localidad-provincia,
+.pais,
+.nombre-apellido {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.localidad-provincia p,
+.pais p,
+.nombre-apellido p {
+  font-size: 20px;
+  color: #8C8C8C;
+  font-family: sans-serif;
+  margin-top: 10px;
+
+}
+
+.btn-adoptar {
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: "Lilita One", sans-serif;
+}
+
+/* Nuevo estilo para el botón deshabilitado */
+.btn-adoptar:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
